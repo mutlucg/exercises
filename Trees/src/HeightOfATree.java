@@ -1,3 +1,5 @@
+import Model.*;
+
 public class HeightOfATree {
 
     public static int height(Node root) {
@@ -11,17 +13,5 @@ public class HeightOfATree {
             if (lHeight > rHeight) return lHeight + 1;
             else return rHeight + 1;
         }
-    }
-}
-
-class Node {
-    Node left;
-    Node right;
-    int data;
-
-    Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
     }
 }
